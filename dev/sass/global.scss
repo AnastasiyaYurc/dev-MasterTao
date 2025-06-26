@@ -1,17 +1,57 @@
 body {
     font-family: "ProximaNova";
-    background-color: black;
+    background-color: $bg-color;
+    color: $color;
 }
 
 .fw-300 {
     font-weight: 300;
 }
+
 .fw-400 {
     font-weight: 400;
 }
+
 .fw-600 {
     font-weight: 600;
 }
+
 .fw-700 {
     font-weight: 700;
+}
+
+.btn {
+    font-size: 15px;
+    border-radius: 90px;
+    background-color: $primary-color;
+    color: $color;
+    border-color: $primary-color;
+    padding: 12px 27px;
+
+    &:hover {
+        background-color: transparent;
+        border-color: $primary-color;
+    }
+
+    &.btn-sm {
+        padding: 12px 18px;
+    }
+
+    &.btn-lg {
+        font-size: 16px;
+        padding: 19px 21px 19px 33px;
+
+        img {
+            margin-left: 48px;
+        }
+    }
+
+    &.btn-secondary {
+        background-color: transparent;
+
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+
 }
