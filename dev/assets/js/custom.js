@@ -32,11 +32,28 @@ inputCheckbox.forEach(item => {
 })
 
 
+const fileInput = document.querySelectorAll('[type="file"]');
 
-const fileInput = document.querySelector('#calculation-file');
-const fileName = document.querySelector('#file-name')
+fileInput.forEach(item => {
+    item.addEventListener('change', function() {
+        let fileName = item.closest('.input-box').querySelector('.file-name')
+        fileName.innerHTML = item.files[0].name;
+    })
+})
 
-fileInput.addEventListener('change', () => {
-   fileName.innerHTML = fileInput.files[0].name;
-});
+
+
+
+
+
+
+
+//const fileInput = document.querySelector('#calculation-file');
+//const fileName = document.querySelector('#file-name')
+
+//fileInput.addEventListener('change', () => {
+  // fileName.innerHTML = fileInput.files[0].name;
+//});
+
+
 

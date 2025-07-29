@@ -35,6 +35,12 @@
         line-height: 222%;
     }
 
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
 
       .swiper-banner {
            .swiper-slide {
@@ -72,6 +78,12 @@
     .swiper-button-prev {
         display: none;
     }
-}   
+       .calculation-img {
+       display: none;
+   }
 
+      .input-box_checkbox:first-child {
+        margin-top: 6px;
+      }
+}
 

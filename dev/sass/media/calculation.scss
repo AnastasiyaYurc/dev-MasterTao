@@ -5,6 +5,9 @@
     .template-title {
          padding-bottom: 52px;
      }
+     .container {
+      position: relative;
+     }
   }
 
 
@@ -158,4 +161,10 @@ input::-webkit-inner-spin-button {
 
 .file-name {
   margin-bottom: 13px;
+}
+
+.calculation-img {
+  position: absolute;
+  bottom: -100px;
+  left: 610px;
 }
