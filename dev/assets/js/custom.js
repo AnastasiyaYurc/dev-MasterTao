@@ -1,9 +1,6 @@
 const selects = document.querySelectorAll('select')
 selects.forEach(item => NiceSelect.bind(item))
 
-
-
-
 const btnBurger = document.querySelector('.hamburger')
 btnBurger.addEventListener('click', ()=> btnBurger.classList.toggle('is-active'))
 
@@ -34,7 +31,6 @@ inputCheckbox.forEach(item => {
       item.closest('.input-box').classList.add('input-box_checkbox')
 })
 
-
 const fileInput = document.querySelectorAll('[type="file"]');
 
 fileInput.forEach(item => {
@@ -43,7 +39,6 @@ fileInput.forEach(item => {
         fileName.innerHTML = item.files[0].name;
     })
 })
-
 
 const advantagesSlideLength = document.querySelectorAll('.advantages .swiper-slide').length
 
