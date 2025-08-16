@@ -16,24 +16,13 @@
         }
     }
 
-    .swiper-banner-arrow {
-        --padding: 20px;
-        height: 0px;
-        position: absolute;
-        top:  calc(50% - 23px);
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        max-width: calc(1503px + var(--padding) * 2);
-        padding: 0 var(--padding);
-        z-index: 1;
-        display: flex;
-        justify-content: space-between;
-    }
+.swiper-banner-arrow {
+  @include variables.swiper-arrow-container;
+}
 
-    .swiper-button-next,
+  .swiper-button-next,
     .swiper-button-prev {
-        color: #fff;
+        color: #ffffff;
         position: static;
         margin-top: 0;
 
@@ -42,45 +31,22 @@
         }
     }
 
-    .swiper-horizontal.swiper-pagination-bullets,
-    .swiper-pagination-bullets.swiper-pagination-horizontal {
-        top: calc(100% - 59px);
+    .banner-title {
+        font-size: 56px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        max-width: 515px;
+        margin-bottom: 10px;
+        line-height: 1.26;
     }
-}
-
-.banner-title {
-    font-size: 56px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-    max-width: 515px;
-    margin-bottom: 10px;
-    line-height: 1.26;
-}
 
 
-.banner-description {
-    font-size: 20px;
-    font-weight: 300;
-    max-width: 340px;
-    margin-bottom: 37px;
-    line-height: 1.35;
-}
-
-.swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-    border: 2px solid #fff;
-    background-color: transparent;
-    opacity: 1;
-    cursor: pointer;
-
-    &-active {
-        background-color: #fff;
+    .banner-description {
+        font-size: 20px;
+        font-weight: 300;
+        max-width: 340px;
+        margin-bottom: 37px;
+        line-height: 1.35;
     }
-}
-
-.swiper-horizontal.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 13px);
 }
