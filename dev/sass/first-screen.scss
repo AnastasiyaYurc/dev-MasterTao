@@ -2,6 +2,7 @@
 
 .swiper-banner {
     max-width: 1820px;
+    width: 100%;
 
     .swiper-slide {
         min-height: 700px;
@@ -16,19 +17,13 @@
         }
     }
 
-.swiper-banner-arrow {
-  @include variables.swiper-arrow-container;
-}
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        top: calc(100% - 59px);
+    }
 
-  .swiper-button-next,
-    .swiper-button-prev {
-        color: #ffffff;
-        position: static;
-        margin-top: 0;
-
-        &:hover {
-            color: variables.$secondary-color;
-        }
+    .swiper-banner-arrow {
+        @include variables.swiper-arrow-container;
     }
 
     .banner-title {
@@ -40,7 +35,6 @@
         margin-bottom: 10px;
         line-height: 1.26;
     }
-
 
     .banner-description {
         font-size: 20px;

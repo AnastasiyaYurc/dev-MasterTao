@@ -1,0 +1,20 @@
+@use 'variables'as variables;
+
+.about {
+
+    .container {
+        display: flex;
+        gap: 35px;
+        
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.7;
+        font-weight: 300;
+    }
+
+    .about__text {
+        max-width: 555px;
+    }
+}

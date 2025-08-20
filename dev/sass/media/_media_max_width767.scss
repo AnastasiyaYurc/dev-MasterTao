@@ -6,15 +6,29 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-           }
-         }
-
-
-        .form-row {
-            flex-direction: column;
-            margin-bottom: 22px;
         }
-        .form-column {
-            width: 100%;
-        }
+    }
+
+    .form-row {
+        flex-direction: column;
+        margin-bottom: 22px;
+    }
+
+    .form-column {
+        width: 100%;
+    }
+
+  .company {
+    .container {
+      .company-description {
+        width: 100%;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: justify;
+      }
+      .company-img {
+        max-width: 326px;
+      }
+    }
+  }
 }

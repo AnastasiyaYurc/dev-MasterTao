@@ -4,6 +4,11 @@
     .swiper-pagination {
         position: static;
     }
+
+    .advantages.swiper-horizontal.swiper-pagination-bullets,
+    .advantages.swiper-pagination-bullets.swiper-pagination-horizontal {
+        top: calc(100% - 59px);
+    }
 }
 
 .advantage {
@@ -18,23 +23,20 @@
     border-radius: 50%;
     position: relative;
     @include variables.flex-centered;
-}
 
-.advantage_img-box:before {
-    content: "";
-    position: absolute;
-    inset: 10px;
-    background-color: variables.$secondary-color;
-    border-radius: 50%;
-    z-index: -1;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 10px;
+        background-color: variables.$secondary-color;
+        border-radius: 50%;
+        z-index: -1;
+    }
 }
 
 .advantage_title {
     font-size: 18px;
     font-weight: 400;
-}
-
-.advantages.swiper-horizontal.swiper-pagination-bullets,
-.advantages.swiper-pagination-bullets.swiper-pagination-horizontal {
-    top: calc(100% - 59px);
+    line-height: 1.24;
+    max-width: 262px;
 }

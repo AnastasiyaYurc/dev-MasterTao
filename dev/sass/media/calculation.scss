@@ -1,13 +1,17 @@
-@use '../variables' as variables;
+@use '../variables'as variables;
 
 .calculation {
+    margin-top: 60px;
+
     .template-title {
-         padding-bottom: 52px;
-     }
-     .container {
-      position: relative;
-     }
-  }
+    padding-bottom: 52px;
+
+    }
+
+    .container {
+        position: relative;
+    }
+}
 
 .calculation-form {
     max-width: 626px;
@@ -15,10 +19,11 @@
     border-radius: 20px;
     padding: 50px 50px 60px;
     font-size: 15px;
+
 }
-  
-  .calculation-img {
-      position: absolute;
-      bottom: -100px;
-      left: 610px;
-  }
+
+.calculation-img {
+    position: absolute;
+    bottom: -100px;
+    left: 610px;
+}

@@ -17,7 +17,8 @@ body {
 }
 
 section {
-    margin-bottom: variables&section-margin;
+    margin-bottom: 100px;
+    scroll-margin-top: 100px;
 }
 
 h1,
@@ -35,8 +36,8 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
     line-height: 1.245;
+    font-size: 36px;
 }
 
 h3 {
@@ -101,7 +102,7 @@ input {
         +label {
             text-align: center;
             padding: 12px 12px;
-            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23fff' stroke-width='1' stroke-dasharray='3px%2c 6px' stroke-dashoffset='100' stroke-linecap='square'/%3e%3c/svg%3e");
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23fff' stroke-width='2' stroke-dasharray='3px%2c 6px' stroke-dashoffset='100' stroke-linecap='square'/%3e%3c/svg%3e");
             background-size: calc(100% - 1px) calc(100% - 1px);
             background-repeat: no-repeat;
             background-position: center;
@@ -119,6 +120,14 @@ input {
     }
 }
 
+textarea {
+    @extend input;
+    min-height: 55px;
+    height: 70px;
+    max-width: 100%;
+
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -126,7 +135,7 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-/*Firefox*/
+/*Firefox */
 input[type=number] {
     -moz-appearance: textfield;
     appearance: textfield;
@@ -158,7 +167,7 @@ input[type='checkbox']+label:before {
 
 input[type='checkbox']:checked+label:before {
     content: "";
-    background: url(./assets/img/icon-checked.svg) center no-repeat #ffffff;
+    background: url(./assets/img/icon-checked.svg) center no-repeat #fff;
 }
 
 .bg-accent {
@@ -219,7 +228,7 @@ input[type='checkbox']:checked+label:before {
 
     &.btn-lg {
         font-size: 16px;
-        padding: 19px 21px 19px 33px;
+        padding: 21px 18px 19px 33px;
 
         img {
             margin-left: 48px;
@@ -283,7 +292,7 @@ input[type='checkbox']:checked+label:before {
 .form-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px 30px;
+    gap: 28px 30px;
     margin-bottom: 34px;
 
     &:last-of-type {
@@ -304,6 +313,7 @@ input[type='checkbox']:checked+label:before {
     position: relative;
     width: 100%;
 }
+
 
 .input-box_checkbox {
     padding-left: 33px;
@@ -356,4 +366,10 @@ input[type='checkbox']:checked+label:before {
     transform: rotate(-180deg);
     margin-top: -14px;
     right: 20px;
+}
+
+
+.delivery,
+.services {
+    overflow: hidden;
 }

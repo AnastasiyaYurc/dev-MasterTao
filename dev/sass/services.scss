@@ -1,7 +1,16 @@
+@use 'variables'as variables;
+
 .card_services {
     min-height: 482px;
     margin: 0 10px;
+
     .card-title {
         text-align: left;
+        color: #ffffff;
     }
+}
+
+.swiper-arrow-container {
+   @include variables.swiper-arrow-container;
+   width: calc(100% + 183px);
 }
