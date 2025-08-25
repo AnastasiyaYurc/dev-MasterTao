@@ -1,48 +1,48 @@
 <section id="calculation" class="calculation">
     <div class="container">
         <div class="template-title template-title_case-3">
-            <h2>Получить рассчет стоимости доставки вашего груза</h2>
+            <h2>Get a quote for shipping your cargo</h2>
         </div>
         <form class="calculation-form">
             <div class="form-row">
                 <div class="form-column">
                     <div class="input-box">
-                        <label for="product-category">Категория товара:</label>
+                        <label for="product-category">Product category:</label>
                         <select id="product-category">
-                            <option value="1">Тяжелый</option>
-                            <option value="2">Средний</option>
-                            <option value="3">Легкий</option>
+                            <option value="1">Heavy</option>
+                            <option value="2">Average</option>
+                            <option value="3">Easy</option>
                         </select>
                     </div>
                     <div class="input-box">
-                        <label for="cargo-weight">Вес груза (кг):</label>
-                        <input id="cargo-weight" type="number" placeholder="Введите вес" inputmode="numeric">
+                        <label for="cargo-weight">Cargo weight (kg):</label>
+                        <input id="cargo-weight" name="cargo-weight" type="number" placeholder="Enter weight" inputmode="numeric" required>
                     </div>
                 </div>
                 <div class="form-column">
                     <div class="input-box">
-                        <label for="cargo-cost">Стоимость груза:</label>
-                        <input id="cargo-cost" type="number" placeholder="Введите стоимость" inputmode="numeric">
+                        <label for="cargo-cost">Cargo cost:</label>
+                        <input id="cargo-cost" name="cargo-cost" type="number" placeholder="Enter price" inputmode="numeric" required>
                     </div>
                     <div class="input-box">
-                        <label for="cargo-volume">Обьем груза (м3):</label>
-                        <input id="cargo-volume" type="number" placeholder="Введите объем" inputmode="tel">
+                        <label for="cargo-volume">Cargo volume (m3):</label>
+                        <input id="cargo-volume" name="cargo-volume" type="number" placeholder="Enter volume" inputmode="decimal" required>
                     </div>
                 </div>
                 <div class="form-column">
                     <div class="input-box">
                         <input id="insurance" type="checkbox">
-                        <label for="insurance">Страховка</label>
+                        <label for="insurance">Insurance</label>
                     </div>
                     <div class="input-box">
                         <input id="customs-clearance" type="checkbox">
-                        <label for="customs-clearance">Таможенное оформление</label>
+                        <label for="customs-clearance">Customs clearance</label>
                     </div>
                 </div>
                 <div class="form-column">
                     <div class="input-box">
-                        <label for="HS-code">Код ТН ВЭД</label>
-                        <input id="HS-code" type="text" placeholder="Введите код" inputmode="text">
+                        <label for="HS-code">HS code</label>
+                        <input id="HS-code" name="hs-code" type="text" placeholder="Enter code" inputmode="text" required>
                     </div>
                 </div>
             </div>
@@ -50,10 +50,10 @@
                 <div class="input-box">
                     <div class="file-name"></div>
                     <input id="calculation-file" type="file">
-                    <label for="calculation-file">Загрузить фото товара</label>
+                    <label for="calculation-file">Upload product photo</label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-lg btn-primary">Следующий шаг <img src="./assets/img/icon-arrow-left.svg" alt="arrow"></button>
+            <button type="submit" class="btn btn-lg btn-primary">Next step<img src="./assets/img/icon-arrow-left.svg" alt="arrow"></button>
         </form>
         <img src="assets/img/calculation-person.png" class="calculation-img" alt="person">
     </div>

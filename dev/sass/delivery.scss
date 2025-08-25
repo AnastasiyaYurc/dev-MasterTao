@@ -5,7 +5,6 @@
     background-color: variables.$bg-color-accent;
     width: 360px;
     border: none;
-    
 
     &_img-box {
         border-radius: 20px 20px 0 0;
@@ -67,7 +66,6 @@
 
     &.card_services {
         position: relative;
-        
 
         &::after {
             content: "";
@@ -86,4 +84,3 @@
         }
     }
 }
-
